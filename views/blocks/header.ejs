@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <!-- Required meta tags -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://tailosive.net/public/favicon.ico" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title" content="<% if (meta && meta.title) { %> <%= meta.title %> <% } else { %>Tailosive Network<% } %>">
+    <meta name="description" content="<% if (meta && meta.desc) { %> <%= meta.desc %> <% } else { %>A hub for the Tailosive Network on YouTube. <% } %>">
+    <meta name="image" content="<% if (meta && meta.thumbnail) { %><%= meta.thumbnail %><% } else { %>https://tailosive.net/public/tailosiveimage.png<% } %>">
+    <meta property="og:image" content="<% if (meta && meta.thumbnail) { %><%= meta.thumbnail %><% } else { %>https://tailosive.net/public/tailosiveimage.png<% } %>">
+    <meta property="og:site_name" content="<% if (meta && meta.main) { %> <%= meta.main %> <% } else { %>Tailosive Network<% } %>"/>
+    <meta property="og:keywords" content="Tailosive, tailosive network, tech, YouTube, twitter, Drew, Youtuber, technology, apple, apple sheep"/>
+    <meta name="twitter:title" content="<% if (meta && meta.title) { %> <%= meta.title %> <% } else { %>Tailosive Network<% } %>">
+    <meta name="twitter:description" content="<% if (meta && meta.desc) { %> <%= meta.desc %> <% } else { %>A hub for the Tailosive Network on YouTube. <% } %>">
+    <meta name="twitter:image" content="<% if (meta && meta.thumbnail) { %><%= meta.thumbnail %><% } else { %>/public/tailosiveimage.png<% } %>">
+  
+    <!--   PWA Support iOS  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://tailosive.net/public/t_pwa.png">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://tailosive.net/public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!--   CSS   -->
+    <link rel="stylesheet" href="public/css/main.css">
+  
+    <link rel="manifest" href="public/tailosive.webmanifest">
+    <title><% if (meta && meta.title) { %> <%= meta.title %> <% } else { %> Tailosive Network <% } %></title>
+ 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131602668-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-131602668-2');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-9340211017449727",
+          enable_page_level_ads: true
+     });
+    </script>
+
+
+    <script src="https://unpkg.com/webp-hero@0.0.0-dev.21/dist-cjs/polyfills.js"></script>
+    <script src="https://unpkg.com/webp-hero@0.0.0-dev.21/dist-cjs/webp-hero.bundle.js"></script>
+  </head>
+
+  <body class="d-flex flex-column h-100" id="body">
+    <!-- JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="https://tailosive.net/public/js/jquery-3.3.1.slim.min.js" defer></script>
+    <script type="text/javascript" src="https://tailosive.net/public/js/popper.min.js" defer></script>
+    <script type="text/javascript" src="https://tailosive.net/public/js/bootstrap.min.js" defer></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/unveil/1.3.0/jquery.unveil.min.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js" defer></script>
+    <script type="text/javascript" src="public/js/index.js" defer></script>
+    <%- include('./navbar', { path, page }) %>

@@ -1,0 +1,27 @@
+<%- include('blocks/header', {path, page: 'index', meta: {}}) %>
+
+<div class="container">
+  <section class="welcome-section" style="margin-top: 10%;">
+    <div id="text-group">
+      <h1 class="display-1 font-weight-bold mb-0">Monitoring</h1>
+      <h3 class="h3 text-muted mt-0">For the Tailosive Network!</h3>
+    </div>
+  </section>
+
+  <section class="about-section mt-5 mb-5">
+    <br>
+    <h1 class="font-weight-bold">Website Status</h1>
+    <% if (status) { %>
+      <div class="alert alert-success" role="alert">
+        Website is fully operational!
+      </div>
+    <% } else { %>
+      <div class="alert alert-danger" role="alert">
+        Website is unavailable!
+      </div>
+    <% } %>
+  </section>
+
+
+<% include ./blocks/footer %>
+
