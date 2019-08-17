@@ -1,0 +1,34 @@
+{
+  "name": "tailosive-monitoring",
+  "version": "0.0.1",
+  "description": "The Tailosive Monitoring Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "connect-ensure-login": "^0.1.1",
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.2",
+    "express": "^4.16.4",
+    "express-session": "^1.16.1",
+    "node-fetch": "^2.6.0",
+    "pouchdb": "^7.0.0",
+    "pouchdb-adapter-node-websql": "^7.0.0",
+    "rss-parser": "^3.7.2",
+    "session-pouchdb-store": "^0.3.0",
+    "is-reachable": "3.1.0"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "repository": {
+    "url": "https://github.com/SamTheMD/TailosiveMonitoring"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}

@@ -1,0 +1,52 @@
+<div class="container">
+  <nav id="navbar" class="mr-0 p-0 mt-2 navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="/home">
+      <img src="https://tailosive.net/public/tailosiveimage.png" width="50" height="50" alt="Tailosive Logo">
+      <a id="title" class="navbar-brand font-weight-bold text-dark" href="/home">Tailosive</a>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link <% if (page === 'index') { %> active <% } %>" href="/home">Home</a>
+        <a class="nav-item nav-link <% if (page === 'stream') { %> active <% } %>" href="/stream">Stream</a>
+        <li class="nav-item dropdown <% if (page === 'social') { %> active <% } %>">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Social
+          </a>
+<!--           <div class="dropdown-menu shadow dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="/links/youtube">YouTube</a>
+            <a class="dropdown-item" href="/links/twitch">Twitch</a>
+            <a class="dropdown-item" href="/links/twitter">Twitter</a>
+            <a class="dropdown-item" href="/discord">Discord</a>
+          </div> -->
+        </li>
+        <li class="nav-item dropdown <% if (page === 'more') { %> active <% } %>">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            More
+          </a>
+          <div class="dropdown-menu shadow dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+            <h6 class="dropdown-header">Services</h6>
+            <a class="dropdown-item" href="/app">App <span class="badge badge-pill badge-secondary">Beta</span></a>
+            <hr class="customHR">
+            <h6 class="dropdown-header">Other Links</h6>
+            <a class="dropdown-item" href="/shop">Shop</a>
+            <a class="dropdown-item" href="/wallpapers">Wallpapers</a>
+            <hr class="customHR">
+            <a class="dropdown-item" href="/credits">Credits</a>
+<!--             <h6 class="dropdown-header">THEME</h6>
+            <a class="dropdown-item disabled">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" id="switch" class="custom-control-input">
+                <label class="custom-control-label" for="switch">Dark Mode</label>
+              </div>
+            </a> -->
+          </div>
+        </li>
+      </div>
+    </div>
+  </nav>
+</div>
